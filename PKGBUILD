@@ -1,6 +1,6 @@
 pkgname=qt6-qtimageformats
-pkgver=6.9.2
-pkgrel=1
+pkgver=6.10.0
+pkgrel=2
 pkgdesc="Plugins for additional image formats: TIFF, MNG, TGA, WBMP"
 arch=('x86_64')
 url="https://www.qt.io"
@@ -25,7 +25,7 @@ makedepends=(
     'ninja'
 )
 source=(git+https://code.qt.io/qt/${pkgname#*-}#tag=v${pkgver})
-sha256sums=(b1cb0c8cc44d7128e4ca41a98540e861cec3fa638016d3115b778e92f70dbf52)
+sha256sums=(f85df169c2ee5ecf199ea7cd838411cd44905d47ef76858793c5ab1076471ed9)
 
 build() {
     cd ${pkgname#*-}
